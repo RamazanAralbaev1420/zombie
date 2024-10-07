@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zombie Apocalypse - Hayatta kalma mücadelesinde zombilere karşı savaşacağınız aksiyon dolu bir oyun. Kaos ve tehlikelerle dolu dünyada strateji kurarak hayatta kalmaya çalışın."
+    />
+    <meta
+      name="keywords"
+      content="Zombie Apocalypse, zombi oyunu, hayatta kalma oyunu, aksiyon oyunu, zombi savaşı, strateji, kıyamet sonrası, kaos, tehlike, macera, oyun"
+    />
+
+    <meta name="author" content="Zombie Apocalypse Game Studio" />
+    <meta name="language" content="Turkish" />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Zombie Apocalypse - Hayatta Kalma Oyunu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="all" />
+  </head>
+  <body>
+    <div class="cookie-consent-banner" id="cookieBanner">
+      <span>
+        Bu site, kullanıcı deneyimini iyileştirmek için çerezler kullanmaktadır.
+        Kabul ediyor musunuz?
+      </span>
+      <br /><a
+        href="politic.html#Coockie"
+        style="text-decoration: underline; color: #228bef"
+        id="more_details"
+        >daha fazla ayrıntı</a
+      >
+      <button id="acceptCookies">Evet, kabul ediyorum</button>
+    </div>
+    <div class="modal_background"></div>
+    <div class="modal_container">
+      <div class="modal_container_header">
+        <h3 style="text-align: center">Arama isteğinde bulunun</h3>
+        <div class="modal_close">
+          <span> &#x2297; </span>
+        </div>
+      </div>
+      <div class="modal_form">
+        <form action="" class="formMod">
+          <input type="text" name="feedback" required placeholder="feedback" />
+          <input type="tel" name="review" required placeholder="review" />
+          <div class="checkText">
+            <input type="checkbox" id="politicCheck" name="checkbox" checked />
+            <span
+              >Kişisel verilerin işlenmesini ve gizlilik politikasını kabul
+              ediyorum. <br />
+              <a
+                href="politic.html#form_info"
+                style="text-decoration: underline; color: #228bef"
+                >neden verilerinize ihtiyacımız var?</a
+              >
+            </span>
+          </div>
+          <div class="default_btn">
+            <button type="submit" id="submitBtn">Bir istek bırakın</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header id="header" class="head">
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <a href="/">
+                <img src="images/logo.png" alt="logo" data-src=""
+              /></a>
+            </div>
+            <nav class="desktop">
+              <ul class="nav_links">
+                <li class="first-li">
+                  <a href="oyunKonusu.html">Oyun konusu</a>
+                </li>
+                <li>
+                  <a href="#train">Oyun Özellikleri</a>
+                </li>
+                <li>
+                  <a href="#war">Hazine İçin Savaş</a>
+                </li>
+                <li>
+                  <a href="#contacts_form">Son Haberler</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile">
+              <span class="line open_btn" id="burgerButton"></span>
+
+              <nav class="mobile_links">
+                <div class="close_btn">
+                  <span> &#x2297; </span>
+                </div>
+                <ul class="nav_links_mobile">
+                  <li class="first-li">
+                    <a href="oyunKonusu.html">Oyun konusu</a>
+                  </li>
+                  <li>
+                    <a href="#ozge">Oyun Özellikleri</a>
+                  </li>
+                  <li>
+                    <a href="#warning">Hazine İçin Savaş</a>
+                  </li>
+                  <li>
+                    <a href="#contacts_form">Son Haberler</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="accept_mobile_container">
+          <div class="accept">
+            <div class="accept_title">
+              <h2>18 yaşında mısın?</h2>
+            </div>
+            <div class="accept_btns">
+              <div class="accept_btn default_btn no_btn_accept">
+                <a
+                  href="https://"
+                  id="mobile_content_no"
+                  class="mobile_content_btn"
+                  >Hayir</a
+                >
+              </div>
+              <div class="accept_btn default_btn yes_btn_accept">
+                <a
+                  href="https://"
+                  id="mobile_content_yes"
+                  class="mobile_content_btn"
+                  >Evet</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="hero-section">
+          <div class="container">
+            <div class="hero-section">
+              <div class="hero-section_title">
+                <h1>Dünya düştü ama sen insanlığın son şansısın</h1>
+              </div>
+              <div class="hero-section_description">
+                <p>
+                  Küresel bir felaketin ardından dünya yok edildiğinde ve
+                  insanlık yok olmanın eşiğindeyken düzeni yeniden
+                  sağlayabilecek kişi siz olmalısınız. Yıkılan şehirler,
+                  saldırgan çeteler ve mutantlar başka seçenek bırakmıyor; bu
+                  bir hayatta kalma mücadelesi.
+                </p>
+              </div>
+
+              <div class="hero-section_btn default_btn openModal">
+                <button>Daha fazla bilgi edin</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="train">
+          <div class="container">
+            <div class="train">
+              <div class="train_title">
+                <h2>Oyun konusu</h2>
+              </div>
+              <div class="train_info">
+                <div class="train_info_left">
+                  <img src="images/konusu.webp" alt="oyun konusu" />
+                </div>
+                <div class="train_info_right">
+                  <div class="train_info_right_title">
+                    <h3>Felaketten sonra. Sırada ne var?</h3>
+                  </div>
+                  <div class="train_info_right_description">
+                    <p>
+                      Hayatta kalan bir grup, zombilerle dolu harap bir şehrin
+                      önünde duruyor. Alevler içindeki binalar ve yürüyen
+                      ölülerin gölgeleri kaos ve umutsuzluk atmosferini
+                      yaratıyor. Bu, her adımın zombilerin istila ettiği bir
+                      dünyada hayatta kalma mücadelesi olduğu bir yer
+                    </p>
+                  </div>
+                  <div class="train_info_right_btn openModal">
+                    <button class="default_btn">hemen başla</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="team">
+          <div class="container">
+            <div class="team">
+              <div class="team_title">
+                <h2>Hayatta Kalanlar - Zombi Kıyametinin Kahramanları</h2>
+              </div>
+              <div class="team_description">
+                <p>
+                  Zombi kıyametinde hayatta kalan cesur kahramanlar. Her biri
+                  benzersiz yeteneklere ve hikayelere sahip olan bu karakterler,
+                  kaosun ortasında hayatta kalmak için güçlerini birleştiriyor.
+                  Birlikte savaşarak, zombilere karşı direnişin umut ışığı
+                  oluyorlar.
+                </p>
+              </div>
+              <div class="team_cards">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="team_cards_card_image cardBox">
+                        <img src="images/person1.webp" alt="Spark" />
+                      </div>
+                      <div class="team_cards_card_info">
+                        <div class="team_cards_card_info_title">
+                          <h3>Spark</h3>
+                        </div>
+                        <div class="team_cards_card_info_description">
+                          <p class="orange-text">
+                            Herhangi bir metal parçasını ölümcül bir silaha
+                            dönüştürebilen yaratıcı bir tamirci.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team_cards_card_image cardBox">
+                        <img src="images/person2.webp" alt="team cards2" />
+                      </div>
+                      <div class="team_cards_card_info">
+                        <div class="team_cards_card_info_title">
+                          <h3>Phoenix</h3>
+                        </div>
+                        <div class="team_cards_card_info_description">
+                          <p class="orange-text">
+                            Zombi kıyametine meydan okumaya her zaman hazır olan
+                            karizmatik bir lider ve stratejist.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team_cards_card_image cardBox">
+                        <img src="images/person3.webp" alt="Grave" />
+                      </div>
+                      <div class="team_cards_card_info">
+                        <div class="team_cards_card_info_title">
+                          <h3>Grave</h3>
+                        </div>
+                        <div class="team_cards_card_info_description">
+                          <p class="orange-text">
+                            Gücünü zombi ordularıyla savaşmak ve korunmaya
+                            ihtiyacı olanları korumak için kullanan sarsılmaz
+                            bir savaşçı
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team_cards_card_image cardBox">
+                        <img src="images/person4.webp" alt="Raven" />
+                      </div>
+                      <div class="team_cards_card_info">
+                        <div class="team_cards_card_info_title">
+                          <h3>Raven</h3>
+                        </div>
+                        <div class="team_cards_card_info_description">
+                          <p class="orange-text">
+                            Tehlikeden her zaman bir adım önde olan ve
+                            arkadaşları uğruna savaşa girmekten korkmayan
+                            soğukkanlı bir keskin nişancı.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team_cards_card_image cardBox">
+                        <img src="images/person5.webp" alt="Shade" />
+                      </div>
+                      <div class="team_cards_card_info">
+                        <div class="team_cards_card_info_title">
+                          <h3>Shade</h3>
+                        </div>
+                        <div class="team_cards_card_info_description">
+                          <p class="orange-text">
+                            Hızlı ve fark edilmeden saldırmayı tercih eden bir
+                            gizlilik ve çeviklik ustası.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="train">
+          <div class="container">
+            <div class="train">
+              <div class="train_title">
+                <h2>Oyun Özellikleri</h2>
+              </div>
+              <div class="train_info">
+                <div class="train_info_left">
+                  <div class="train_right_title">
+                    <h3>Zombi Kıyametinde Hayatta Kalma Mücadelesi</h3>
+                  </div>
+                  <div class="train_right_description">
+                    Hayatta kalanlar, kaos ve alevler içinde yanan bir şehirde
+                    zombilere karşı amansız bir mücadele veriyor. Patlamalar ve
+                    yağmur altında, hayatta kalmak için savaşan bu grup,
+                    insanlığın son umudunu temsil ediyor.
+                  </div>
+                  <div class="train_info_right_btn openModal">
+                    <button class="default_btn">hemen başla</button>
+                  </div>
+                </div>
+                <div class="train_info_right">
+                  <img src="images/ozellikler.webp" alt="create team" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="war">
+          <div class="container">
+            <div class="war">
+              <div class="war_title">
+                <h2>
+                  Topluluk Forumu - Hayatta Kalanların Strateji Toplantısı
+                </h2>
+              </div>
+              <div class="war_description">
+                <p>
+                  Hayatta kalanlar, zombi kıyameti sırasında stratejilerini
+                  tartışmak ve planlar yapmak için topluluk forumunda bir araya
+                  geliyor. Haritalar, notlar ve ekranlarda yansıyan bilgilerle
+                  dolu bu odada, dayanışma ve iş birliği duygusu hakim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="train">
+          <div class="container">
+            <div class="train">
+              <div class="train_title">
+                <h2>Kahramanları</h2>
+              </div>
+              <div class="train_info">
+                <div class="train_info_left">
+                  <div class="train_right_title">
+                    <h3>Zombi Kıyametinin Kahramanları</h3>
+                  </div>
+                  <div class="train_right_description">
+                    <p>
+                      Zombi kıyametinde hayatta kalmak için bir araya gelen
+                      cesur savaşçılar. Her biri benzersiz yeteneklere ve
+                      kararlılığa sahip bu karakterler, tehlikelerle dolu bu
+                      dünyada birlikte mücadele ediyor. Kıyametin ortasında, bu
+                      ekip insanlığın son umudu olmaya kararlı.
+                    </p>
+                  </div>
+                  <div class="train_info_right_btn openModal">
+                    <button class="default_btn">hemen başla</button>
+                  </div>
+                </div>
+                <div class="train_info_right">
+                  <img src="images/group.webp" alt="create team" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="news"></section>
+
+        <section id="contacts_form">
+          <div class="container">
+            <div class="contacts_af">
+              <div class="contacts_adress">
+                <span>+90 (625) 424-25-52</span>
+                <div class="footer-socials">
+                  <a href="https://web.telegram.org/a/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 100 100"
+                      data-prefix="ii4lwzt7f"
+                    >
+                      <path
+                        data-name="Rectangle 1 copy 14"
+                        fill="none"
+                        d="M0 0h100v100H0z"
+                      ></path>
+                      <path
+                        d="M67.3 29.453a15.533 15.533 0 0 0-6.3-3.136 44.943 44.943 0 0 0-17.65-1.1 23.881 23.881 0 0 0-8.61 2.724 12.527 12.527 0 0 0-6.27 7.881 36.573 36.573 0 0 0-1.14 7.713 37.217 37.217 0 0 0 .91 11.426 12.79 12.79 0 0 0 7.82 9.248c.46.186.9.441 1.35.633a.829.829 0 0 1 .55.919c-.02 3-.01 6.009-.01 9.148 1.11-1.076 1.88-1.868 2.44-2.5 1.66-1.89 3.23-3.463 4.97-5.261.88-.911.51-.867 1.87-.844 1.61.026 4.13.09 5.72-.036a42.436 42.436 0 0 0 9-1.515c3.73-1.126 6.72-3.133 8.23-6.923a22.325 22.325 0 0 0 1.04-3.072 41.3 41.3 0 0 0 .05-18.111 12.367 12.367 0 0 0-3.97-7.194zm-18.54 3.658a.756.756 0 0 1 .91-.779c4.63.222 8.12 1.606 10.8 5.234a13.969 13.969 0 0 1 2.5 7.663c0 .4.02.793 0 1.188a.746.746 0 1 1-1.49.009 18.037 18.037 0 0 0-1.25-5.707c-1.45-3.54-4.22-5.448-7.79-6.369a16.847 16.847 0 0 0-2.87-.523c-.44-.036-.84-.127-.81-.716zm4.68 4.944a15.36 15.36 0 0 0-2.89-.742.726.726 0 0 1-.73-.889.761.761 0 0 1 .93-.693c3.24.308 5.76 1.49 7.5 4.305a8.746 8.746 0 0 1 1.22 4.579c-.05.991-.2 1.247-.77 1.232-.82-.023-.7-.7-.76-1.2a15.741 15.741 0 0 0-.47-2.26 6.081 6.081 0 0 0-4.03-4.333zm2.73 5.479c-.03.275-.03.465-.07.646a.686.686 0 0 1-.7.587.7.7 0 0 1-.72-.575c-.07-.237-.09-.491-.14-.736a2.979 2.979 0 0 0-2.29-2.516c-.16-.043-.32-.066-.48-.11-.41-.114-.92-.123-.93-.723a.886.886 0 0 1 1.04-.835 3.874 3.874 0 0 1 1.59.4 4.435 4.435 0 0 1 2.7 3.862zm6.81 13.8a6.859 6.859 0 0 1-4.59 4 3.306 3.306 0 0 1-2.24-.273 37.411 37.411 0 0 1-20.89-21.1 5.2 5.2 0 0 1 4.28-7.245 2.3 2.3 0 0 1 1.76.656 18.615 18.615 0 0 1 4.13 5.668 2.08 2.08 0 0 1-.67 2.825c-.16.134-.33.252-.5.375a2.544 2.544 0 0 0-.98 3.486 12.618 12.618 0 0 0 4.99 5.925 10.494 10.494 0 0 0 2.72 1.359 1.944 1.944 0 0 0 2.21-.736c.06-.081.12-.166.18-.251 1.27-1.758 2.62-2.063 4.45-.921a37.067 37.067 0 0 1 4.46 3.3 2.3 2.3 0 0 1 .69 2.928z"
+                        fill-rule="evenodd"
+                        class="path-iup4nab58"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="insta" href="https://web.whatsapp.com/"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      id="instagram"
+                      width="20"
+                      height="20"
+                    >
+                      <path
+                        d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="https://web.whatsapp.com/"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 100 100"
+                      data-prefix="itqrqc1c6"
+                    >
+                      <path fill="none" d="M0 0h100v100H0z"></path>
+                      <path
+                        d="M50.66 73.591a23.931 23.931 0 0 1-11.76-3.074l-13.649 4.4 4.524-13.441A24.078 24.078 0 1 1 50.66 73.591zm0-44.317a20.191 20.191 0 0 0-18.535 28.057 28.549 28.549 0 0 0 1.975 3.541l-2.69 8.089 8.1-2.642a20.261 20.261 0 0 0 3.28 1.7 20.166 20.166 0 1 0 7.87-38.745zm-.744 28.9a22.174 22.174 0 0 1-4.016-3.027.011.011 0 0 1-.014-.009h-.011v-.013a22.066 22.066 0 0 1-3.525-3.6c-5.475-6.654-2.937-10.855-2.211-11.684.837-.966 3.558-1.3 3.614-.818s2.847 5.63 2.9 6.1-1.47 2.228-1.916 2.74 3.5 4.418 3.566 4.482c.082.065 4.472 3.465 4.911 2.966s1.969-2.253 2.444-2.266 5.947 2.087 6.423 2.074.515 2.737-.333 3.706c-.715.836-4.533 3.92-11.832-.647z"
+                        fill-rule="evenodd"
+                        class="path-ill8i3hbj"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                Mektuplar ve öneriler için:
+                <a href="" style="text-decoration: underline"
+                  >info@oyun-dunyasi.com</a
+                ><br />
+                <span>
+                  İstiklal Caddesi No: 123, Beyoğlu, 34433 İstanbul, Türkiye
+                </span>
+              </div>
+              <div class="contacts_form">
+                <form action="" class="form_inner">
+                  <div class="name_phone">
+                    <input
+                      name="name"
+                      type="text"
+                      placeholder="feedback"
+                      required
+                    />
+                    <input
+                      name="phone"
+                      type="text"
+                      id="phone"
+                      placeholder="review"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    name="grade"
+                    placeholder="grade"
+                    required
+                  />
+                  <div class="checkText">
+                    <input
+                      type="checkbox"
+                      id="politicCheck"
+                      name="checkbox"
+                      checked
+                    />
+                    <span>
+                      Kişisel verilerin işlenmesini ve gizlilik politikasını
+                      kabul ediyorum
+                      <a
+                        href="politic.html#form_info"
+                        style="text-decoration: underline; color: #228bef"
+                        >neden verilerinize ihtiyacımız var?</a
+                      >
+                    </span>
+                  </div>
+                  <div class="default_btn">
+                    <button type="submit" id="submitBtn">
+                      Bir istek bırakın
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="container">
+          <div class="my_footer">
+            <span
+              >© 2024 All Rights Reserved:Zombie Apocalypse - Hayatta Kalma
+              Oyunu</span
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script defer src="js/script.js"></script>
+    <script>
+      // slider
+
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 30,
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          668: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          470: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+  </body>
+</html>
