@@ -859,6 +859,24 @@ header {
       background-color: #16212c83;
     }
   }
+
+  .maps_info_images_item {
+    width: 100%;
+  }
+
+  .team_title {
+    text-align: center;
+  }
+
+  .team_description {
+    width: 100%;
+  }
+
+  .page2 {
+    .maps_info_images_item {
+      width: 100% !important;
+    }
+  }
 }
 
 @media (min-width: 1500px) {
